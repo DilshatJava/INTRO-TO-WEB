@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Практическое задание 2 часть 2</title>
+  <style>
+    * {
+    //border: 1px solid red;
+    }
+    body {
+      front-family: Arial;
+      front-size: 14px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+    }
+    first_row {
+      display: flex;
+      border: 1px none dimgray;
+      border-bottom-style: solid;
+    }
+    row {
+      display: flex;
+      border: 1px none lightgray;
+      border-bottom-style: solid;
+    }
+    frame1 {
+      padding: 10px;
+      width: 50%;
+    }
+    frame2 {
+      padding: 10px;
+      width: 20%;
+    }
+    frame3 {
+      padding: 10px;
+      width: 30%;
+    }
+    .button {
+      border-style: none;
+      background-color: maroon;
+      color: antiquewhite;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body onload="load()">
+  <main>
+    <first_row>
+      <frame1><strong>NAME</strong></frame1>
+      <frame2><strong>PRICE</strong></frame2>
+      <frame3><strong>REMOVE</strong></frame3>
+    </first_row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(0)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(1)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(2)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(3)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(4)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(5)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(6)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(7)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(8)">- REMOVE</button>
+      </frame3>
+    </row>
+    <row>
+      <frame1>
+        <span></span>
+      </frame1>
+      <frame2>
+        <span></span>
+      </frame2>
+      <frame3>
+        <button class="button" onclick="remove(9)">- REMOVE</button>
+      </frame3>
+    </row>
+  </main>
+</body>
+<script>
+  //загрузка из Storage
+  let mas_phones = [];
+  if (localStorage.phones != null){
+    mas_phones = JSON.parse(localStorage.phones);
+  }
+  //функция прорисовки формы
+  function load(){
+    //использовать цикл по span
+    let count = 0;
+    let spans = document.getElementsByTagName('span');
+    for (let span of spans) {
+      if (parseInt(count/2) < mas_phones.length){
+        if (count%2 == 0)
+          span.innerHTML = mas_phones[parseInt(count/2)]["name"];
+        else
+          span.innerHTML = mas_phones[parseInt(count/2)]["price"];
+      } else
+        span.innerHTML = "";
+      count++;
+    }
+    count = 0;
+    let rows = document.getElementsByTagName('row');
+    for (let row of rows) {
+      if (count >= mas_phones.length)
+        row.style.display = 'none';
+      count++;
+    }
+  }
+  //функция удаления элемента
+  function remove(x){
+    //удаляем из массива
+    if (x < mas_phones.length) {
+      mas_phones.splice(x, 1);
+    }
+    //загрузка в Storage
+    localStorage.phones = JSON.stringify(mas_phones);
+    //прорисовка элементов
+    this.load();
+  }
+</script>
+</html>

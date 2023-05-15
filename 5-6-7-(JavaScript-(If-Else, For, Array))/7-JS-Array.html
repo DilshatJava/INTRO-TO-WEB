@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head></head>
+
+<body>
+    <script>
+//1
+        // let n = parseInt(prompt())
+        // let arr = []
+        // for (let index = 0; index < n; index++) {
+        //     arr.push(prompt())
+        // }
+        // n=0;
+        // let m = parseInt(prompt("Какое число ищите?"))
+        // for (let index = 0; index < arr.length; index++) {
+        //     if(m==arr[index]){
+        //     alert("Yes "+ index)
+        //     n++;
+        //     break;
+        //     }
+        // }
+        // if(n==0) alert("No")
+//2
+        // let arr = []
+        // while (true) {
+        //     let m = parseInt(prompt())
+        //     if (m==0) {
+        //         break
+        //     }
+        //     arr.push(m)
+        // }
+        // let sum = 1;
+        // for (let index = 0; index < arr.length; index++) {
+        //      sum*= arr[index];
+        // }
+        // alert(Math.pow(sum, 1/arr.length).toFixed(3))
+//3
+        // let arr = []
+        // while (true) {
+        //     let m = parseInt(prompt())
+        //     if (m==0) {
+        //         break
+        //     }
+        //     arr.push(m)
+        // }
+        // let sum = [];
+        // for (let index = 0; index < arr.length; index++) {
+        //     if (arr[index]>0) {
+        //      sum.push(arr[index])
+        //     }
+        // }
+        // alert(sum)
+
+//4
+        // let arr = []
+        // let m = parseInt(prompt("Задай размер массива"))
+        // for (let index = 0; index < m; index++) {
+        //     arr.push(parseInt(prompt()));
+        // }
+        // let sum = 1;
+        // for (let index = 0; index < arr.length; index++) {
+        //     if (arr[index]!=0) {
+        //      sum*=arr[index]
+        //     }
+        // }
+        // alert(sum)
+
+//5
+        // cars = [
+        //     { "name": "Toyota", "price": 12000000, "year": 2015, "volume": 2.2 },
+        //     { "name": "Mercedes", "price": 70000000, "year": 2018, "volume": 3.8 },
+        //     { "name": "Toyota", "price": 7000000, "year": 2013, "volume": 2.0 },
+        //     { "name": "BMW", "price": 11000000, "year": 2011, "volume": 3.0 },
+        //     { "name": "Lexus", "price": 60000000, "year": 2017, "volume": 5.7 }
+        // ];
+        // while (true) {
+        //     var text = "";
+        //     let n = parseInt(prompt("INSERT [1] TO SEARCH BY NAME\nINSERT [2] TO SEARCH BY YEAR\nINSERT [3] TO SEARCH BY ENGINE VOLUME\nINSERT [4] TO SEARCH BY PRICE\nINSERT [5] TO EXIT"))
+        //     if (n == 1) {
+        //         let name1 = prompt("INSERT NAME OF CAR:")
+        //         for (var i = 0; i < cars.length; i++) {
+        //             if (cars[i]["name"] == name1)
+        //                 text += cars[i]["name"] + " - " + cars[i]["price"] + " - " + cars[i]["year"] + " - " + cars[i]["volume"].toFixed(1) + " liters\n";
+        //         }
+        //     } else if (n==2) {
+        //         let year1 = parseInt(prompt("INSERT YEAR START FROM:"))
+        //         let year2 = parseInt(prompt("INSERT YEAR ENDS FROM:"))
+        //         for (var i = 0; i < cars.length; i++) {
+        //             if (cars[i]["year"] >= year1 && cars[i]["year"] <= year2)
+        //                 text += cars[i]["name"] + " - " + cars[i]["price"] + " - " + cars[i]["year"] + " - " + cars[i]["volume"].toFixed(1) + " liters\n";
+        //         }
+        //     } else if (n==3) {
+        //         let engine1 = parseFloat(prompt("INSERT ENGINE VOLUME START FROM:"))
+        //         let engine2 = parseFloat(prompt("INSERT ENGINE VOLUME ENDS FROM:"))
+        //         for (var i = 0; i < cars.length; i++) {
+        //             if (cars[i]["volume"] >= engine1 && cars[i]["volume"] <= engine2)
+        //                 text += cars[i]["name"] + " - " + cars[i]["price"] + " - " + cars[i]["year"] + " - " + cars[i]["volume"].toFixed(1) + " liters\n";
+        //         }
+        //     } else if (n==4) {
+        //         let price1 = parseInt(prompt("INSERT YEAR START FROM:"))
+        //         let price2 = parseInt(prompt("INSERT YEAR ENDS FROM:"))
+        //         for (var i = 0; i < cars.length; i++) {
+        //             if (cars[i]["price"] >= price1 && cars[i]["price"] <= price2)
+        //                 text += cars[i]["name"] + " - " + cars[i]["price"] + " - " + cars[i]["year"] + " - " + cars[i]["volume"].toFixed(1) + " liters\n";
+        //         }
+        //     } else {
+        //         break;
+        //     }
+        //     alert(text)
+        //}
+//6
+        // let students = [];
+        // let menuExit = false;
+        // do { //цикл для меню
+        //     let n = prompt( "PRESS 1 TO ADD STUDENT\n" +
+        //                     "PRESS 2 TO LIST STUDENT\n" +
+        //                     "PRESS 0 TO EXIT");
+        //     let s = "";
+        //     switch (n) {
+        //         case '1':
+        //             let name = prompt("INSERT NAME:");
+        //             let surname = prompt("INSERT SURNAME:");
+        //             let gpa = parseFloat(prompt("INSERT GPA:"));
+        //             let newStudent = {}; //создаем новый объект для добавления студента
+        //             newStudent.name = name;
+        //             newStudent.surname = surname;
+        //             newStudent.gpa = gpa;
+        //             students.push(newStudent); //добавляем объект в конец массива
+        //             break;
+        //         case '2':
+        //             for (let i = 0; i < students.length; i++)
+        //                 s += students[i]["name"] + " - " + students[i]["surname"] + " - " + students[i]["gpa"] + "\n";
+        //             if (s !== "")
+        //                 alert(s);
+        //             else
+        //                 alert("Student list is empty");
+        //             break;
+        //         case '0':
+        //             menuExit = true;
+        //             break;
+        //         default:
+        //             alert("Wrong choice");
+        //             break;
+        //     }
+        // } while (!menuExit);
+
+    </script>
+</body>
+
+</html>

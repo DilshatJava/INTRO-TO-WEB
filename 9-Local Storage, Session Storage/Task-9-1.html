@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <title>Task-9-1</title>
+    <script src="Task-9-1.js"></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .login-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        /* */
+        .login-container {
+            background-color: #ffffff;
+            padding: 3rem;
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+            margin-bottom: 2rem;
+            border-radius: .5rem;
+        }
+
+        .forDiv {
+            margin: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body onload="load()" style="background-color: rgb(172, 170, 170);">
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="forDiv">
+                <div style="width: 30%;">NAME</div>
+                <input type="text" id="theName">
+            </div>
+            <div class="forDiv">
+                SURNAME
+                <input type="text" id="theSurName">
+            </div>
+            <div class="forDiv">
+                COUNTRY
+                <select style="width: 169px;" name="" id="theCountry">
+                    <option value="1">KAZAKHSTAN</option>
+                    <option value="2">RUSSIA</option>
+                    <option value="3">USA</option>
+                </select>
+            </div>
+            <div class="forDiv">
+                PHONE NUMBER
+                <input type="text" id="thePhone">
+            </div>
+            <div class="forDiv">
+                <button>REGISTER</button>
+                <button onclick="toSave()">SAVE TO DRAFT</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

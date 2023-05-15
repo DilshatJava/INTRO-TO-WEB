@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    font-family: Arial;
+}
+
+.navbar {
+    display: flex;
+    color: white;
+    background-color: #447bba;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: bold;
+    width: 15%;
+}
+
+.poisk {
+    padding: 5px;
+    background-color: #194576;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.content {
+    background-color: #EDEEF0;
+    display: flex;
+    width: 100%;
+}
+
+.c1 {
+    width: 15%;
+    margin-left: 15%;
+    color: rgb(49, 63, 155);
+}
+
+.c1>p {
+    padding: 5px 0px;
+}
+
+.c2 {
+    width: 20%;
+    align-items: center;
+}
+
+.c21 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.c21>p {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.c21>button {
+    padding: 5px;
+    width: 95%;
+    margin: 5px 0;
+    background-color: aliceblue;
+}
+
+.c21>img {
+    margin: 5px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.friends>div>img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.friends>div>p {
+    text-align: center;
+}
+
+.c3 {
+    margin-left: 15px;
+    margin-right: 15%;
+    width: 35%;
+}
+
+.c31 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 5px;
+    padding-top: 10px;
+    border-radius: .5rem;
+    /* justify-content: center; */
+}
+
+.c31>h4 {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.anketa {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstColumn {
+    color: #626d7a;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.secondColumn {
+    color: #2a5885;
+    width: 60%;
+    margin-top: 10px;
+}
+
+.thirdColumn {
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.thirdRow {
+    width: 20%;
+    text-align: center;
+}
+
+.thirdRow>p{
+    color: #2a5885;
+}
+
+.thirdRow>h6{
+    color: #626d7a;
+}
+
+.picture{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.picture>img{
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.firstContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.firstContent>div>img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
